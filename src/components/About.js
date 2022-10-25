@@ -68,10 +68,6 @@ About(props) {
             </div>
         </div>
         </div>
-
-        <div className="container my-4">
-            <button type="button" className="btn btn-primary my-3" onClick={handleMode}>{btntext}</button>
-        </div>
         
 </div>
   )
