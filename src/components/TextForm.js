@@ -70,8 +70,8 @@ TextForm(props) {
     </div>
     <div className="container my-3" style={{color: props.mode==='dark'? 'white': 'black'}}>
       <h1>Your Text Summary</h1>
-      <p className="my-2">This text area has {text.split(' ').filter(elem => elem.length!==0).length} words and {text.length} characters</p>
-      <p className="my-2">{0.008 * text.split(' ').filter(elem => elem.length!==0).length} minutes to read this paragraph</p>
+      <p className="my-2">This text area has {text.split(/\s+/).filter(elem => elem.length!==0).length} words and {text.length} characters</p>
+      <p className="my-2">{0.008 * text.split(/\s+/).filter(elem => elem.length!==0).length} minutes to read this paragraph</p>
       <h2 className="my-4">Text Preview</h2>
       <p className="my-1">{text.length>0?text:'Enter text to preview here..'}</p>
     </div>
